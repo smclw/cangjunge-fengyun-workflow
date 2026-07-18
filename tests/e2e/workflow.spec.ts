@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { expect,test } from '@playwright/test';
 
-test.beforeEach(async({page})=>{await page.goto('/');await expect(page.getByRole('heading',{name:'Topview涨粉变现工作流'})).toBeVisible();await page.getByLabel('当前项目').selectOption('demo-problem-solving-product');await expect(page.getByText('演示数据，不代表真实经营结果').first()).toBeVisible();});
+test.beforeEach(async({page})=>{await page.goto('/');await expect(page.getByRole('heading',{name:'沧钧阁 · 风云化金工作流'})).toBeVisible();await page.getByLabel('当前项目').selectOption('demo-problem-solving-product');await expect(page.getByText('演示数据，不代表真实经营结果').first()).toBeVisible();});
 
 test('首页、全部导航、折叠菜单和图表可用',async({page})=>{await expect(page.getByText('7天发布')).toBeVisible();await expect(page.getByText('工作流进度')).toBeVisible();await expect(page.locator('.recharts-responsive-container').first()).toBeVisible();const routes=[['新建项目','/new'],['项目列表','/projects'],['素材库','/materials'],['产品库','/products'],['选题库','/topics'],['脚本库','/scripts'],['Topview制作包','/topview'],['发布计划','/publishing'],['数据分析','/analytics'],['复盘中心','/review'],['设置','/settings']];for(const [label,url] of routes){await page.getByRole('link',{name:label,exact:true}).click();await expect(page).toHaveURL(new RegExp(`${url}$`));await expect(page.locator('main')).not.toBeEmpty();}await page.getByLabel('收起或展开侧栏').click();await expect(page.locator('.app-shell')).toHaveClass(/collapsed/);await page.getByLabel('收起或展开侧栏').click();await expect(page.locator('.app-shell')).not.toHaveClass(/collapsed/);});
 
