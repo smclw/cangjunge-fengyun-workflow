@@ -9,7 +9,18 @@
 
 ![沧钧阁 · 风云化金工作流界面](docs/ui-reference/最终界面截图.png)
 
-## 第一次使用
+## 开发者快速开始
+
+确认已安装 Node.js 22，然后在项目根目录运行：
+
+```powershell
+npm install
+npm run dev
+```
+
+命令会同时启动后端热更新和 Vite 前端，并自动打开 `http://127.0.0.1:5173`。开发结束按 `Ctrl+C` 同时关闭两个服务。若 4173 或 5173 被占用，命令会直接提示；自动化环境可先设置 `TOPVIEW_DEV_NO_BROWSER=1` 禁止打开浏览器。
+
+## 第一次使用（双击方式）
 
 1. 确认电脑已安装 Node.js 22 LTS。
 2. 双击根目录的 `启动工作流.bat`。首次运行会通过 `npm.cmd` 安装依赖并构建页面。
@@ -46,9 +57,11 @@
 ## 开发与验证
 
 ```powershell
+npm.cmd run dev
 npm.cmd run typecheck
 npm.cmd run test:unit
 npm.cmd run test:integration
+npm.cmd run test:dev-startup
 npm.cmd run test:e2e
 npm.cmd run validate
 powershell.exe -ExecutionPolicy Bypass -File scripts\validate.ps1

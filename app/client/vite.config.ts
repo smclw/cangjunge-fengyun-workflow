@@ -4,4 +4,5 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root=path.dirname(fileURLToPath(import.meta.url));
-export default defineConfig({root,plugins:[react()],build:{outDir:path.join(root,'dist'),emptyOutDir:true,sourcemap:true},server:{host:'127.0.0.1',port:5173,proxy:{'/api':'http://127.0.0.1:4173'}}});
+const openBrowser=process.env.TOPVIEW_DEV_NO_BROWSER!=='1';
+export default defineConfig({root,plugins:[react()],build:{outDir:path.join(root,'dist'),emptyOutDir:true,sourcemap:true},server:{host:'127.0.0.1',port:5173,strictPort:true,open:openBrowser,proxy:{'/api':'http://127.0.0.1:4173'}}});
