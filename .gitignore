@@ -16,3 +16,7 @@ data/projects/*/*.bak
 tests/fixtures/e2e-data/
 tmp/
 .DS_Store
+
+# Local-only reference materials
+/界面规划.png
+/沧钧阁涨粉变现工作流系统说明书.docx
