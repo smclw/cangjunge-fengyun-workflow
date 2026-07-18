@@ -1,6 +1,13 @@
-# Topview 涨粉变现工作流
+# 沧钧阁 · 风云化金工作流
+
+[![CI](https://github.com/smclw/cangjunge-fengyun-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/smclw/cangjunge-fengyun-workflow/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
+
+> A traceable, Windows-first local workflow for turning product evidence into topics, scripts, Topview production packages, publishing records, metrics and review experiments.
 
 这是一个只在本机运行的中文操作台，把“资料—选题—三类脚本—Topview 制作包—人工制作/发布—数据—复盘”保存为可追溯项目。第一阶段不会登录 Topview、调用收费接口或自动发布。
+
+![沧钧阁 · 风云化金工作流界面](docs/ui-reference/最终界面截图.png)
 
 ## 第一次使用
 
@@ -46,5 +53,13 @@ npm.cmd run test:e2e
 npm.cmd run validate
 powershell.exe -ExecutionPolicy Bypass -File scripts\validate.ps1
 ```
+
+## 参与完善
+
+欢迎提交 Bug、功能建议、文档和 Pull Request。开始前请阅读 [贡献指南](CONTRIBUTING.md)、[路线图](ROADMAP.md)、[行为准则](CODE_OF_CONDUCT.md) 和 [安全政策](SECURITY.md)。适合第一次贡献的任务会使用 `good first issue` 标签。
+
+## 开源许可与声明
+
+项目使用 [Apache License 2.0](LICENSE)。Topview 名称及商标归相应权利人所有；本项目不是 Topview 官方产品，也未获得其官方背书。演示数据不代表真实经营结果。
 
 更多说明见 [docs/使用说明.md](docs/使用说明.md)、[docs/Topview手动操作说明.md](docs/Topview手动操作说明.md) 和 [docs/故障排查.md](docs/故障排查.md)。

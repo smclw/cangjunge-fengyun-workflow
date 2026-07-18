@@ -5,7 +5,7 @@ description: "Run a traceable growth-and-monetization video workflow from positi
 
 # Topview Growth Monetization
 
-Use the local project at `E:\AI\CodexProjects\涨粉变现` as the durable workspace. Keep observed facts, verified public sources, AI inference, unverified claims, and prohibited claims distinct.
+Use the repository root as the durable workspace. Keep observed facts, verified public sources, AI inference, unverified claims, and prohibited claims distinct.
 
 ## Select one mode
 

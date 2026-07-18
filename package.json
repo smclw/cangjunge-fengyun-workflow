@@ -2,6 +2,15 @@
   "name": "topview-growth-monetization-workflow",
   "version": "1.0.0",
   "private": true,
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smclw/cangjunge-fengyun-workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smclw/cangjunge-fengyun-workflow/issues"
+  },
+  "homepage": "https://github.com/smclw/cangjunge-fengyun-workflow#readme",
   "type": "module",
   "description": "Windows 本地运行的 Topview 涨粉变现工作流操作台",
   "scripts": {
@@ -18,7 +27,7 @@
     "seed": "tsx scripts/seed-demo.ts"
   },
   "dependencies": {
-    "adm-zip": "^0.5.16",
+    "adm-zip": "^0.6.0",
     "express": "^5.1.0",
     "lucide-react": "^0.468.0",
     "multer": "^2.0.2",
@@ -30,7 +39,6 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",
-    "@types/adm-zip": "^0.5.7",
     "@types/express": "^5.0.3",
     "@types/multer": "^2.0.0",
     "@types/node": "^22.18.1",
