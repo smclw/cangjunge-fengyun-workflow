@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "defaultWeights": { "growth": 0.6, "monetization": 0.4 },
+  "growth": {
+    "pain": 20,
+    "visualContrast": 20,
+    "curiosity": 15,
+    "audienceBreadth": 15,
+    "saveShareValue": 10,
+    "freshness": 10,
+    "seriesPotential": 10
+  },
+  "monetization": {
+    "purchaseIntent": 20,
+    "demonstrability": 15,
+    "margin": 15,
+    "audienceFit": 15,
+    "purchaseEase": 10,
+    "trustCompliance": 10,
+    "longTermValue": 10,
+    "differentiation": 5
+  },
+  "risks": {
+    "falseAdvertising": 6,
+    "copyright": 5,
+    "medicalClaim": 5,
+    "supply": 3,
+    "afterSales": 3,
+    "price": 2,
+    "missingEvidence": 4,
+    "homogeneity": 2
+  },
+  "hardBlocks": ["falseAdvertising", "copyright", "medicalClaim"],
+  "scoreRange": { "growth": [0, 100], "monetization": [0, 100], "risk": [0, 30], "composite": [-30, 100] }
+}

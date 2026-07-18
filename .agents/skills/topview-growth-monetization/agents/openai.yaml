@@ -1,0 +1,6 @@
+interface:
+  display_name: "Topview 涨粉变现工作流"
+  short_description: "完成选题、脚本、制作包、数据诊断和复盘闭环"
+  default_prompt: "Use $topview-growth-monetization to start a guided growth and monetization video project."
+policy:
+  allow_implicit_invocation: true

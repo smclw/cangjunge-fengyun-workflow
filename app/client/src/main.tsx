@@ -1,0 +1,20 @@
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ProjectProvider } from './hooks/ProjectContext';
+import { AppShell } from './layouts/AppShell';
+import { DashboardPage } from './pages/DashboardPage';
+import { NewProjectPage } from './pages/NewProjectPage';
+import { ProjectsPage } from './pages/ProjectsPage';
+import { MaterialsPage } from './pages/MaterialsPage';
+import { ProductsPage } from './pages/ProductsPage';
+import { TopicsPage } from './pages/TopicsPage';
+import { ScriptsPage } from './pages/ScriptsPage';
+import { TopviewPage } from './pages/TopviewPage';
+import { PublishingPage } from './pages/PublishingPage';
+import { AnalyticsPage } from './pages/AnalyticsPage';
+import { ReviewPage } from './pages/ReviewPage';
+import { SettingsPage } from './pages/SettingsPage';
+import './styles/theme.css';
+
+createRoot(document.getElementById('root')!).render(<StrictMode><BrowserRouter><ProjectProvider><Routes><Route element={<AppShell/>}><Route index element={<DashboardPage/>}/><Route path="new" element={<NewProjectPage/>}/><Route path="projects" element={<ProjectsPage/>}/><Route path="materials" element={<MaterialsPage/>}/><Route path="products" element={<ProductsPage/>}/><Route path="topics" element={<TopicsPage/>}/><Route path="scripts" element={<ScriptsPage/>}/><Route path="topview" element={<TopviewPage/>}/><Route path="publishing" element={<PublishingPage/>}/><Route path="analytics" element={<AnalyticsPage/>}/><Route path="review" element={<ReviewPage/>}/><Route path="settings" element={<SettingsPage/>}/></Route></Routes></ProjectProvider></BrowserRouter></StrictMode>);

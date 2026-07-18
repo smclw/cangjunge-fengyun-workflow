@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "platforms": [
+    { "id": "douyin", "name": "抖音", "aiDisclosure": true, "commercialDisclosure": true },
+    { "id": "xiaohongshu", "name": "小红书", "aiDisclosure": true, "commercialDisclosure": true },
+    { "id": "tiktok", "name": "TikTok", "aiDisclosure": true, "commercialDisclosure": true },
+    { "id": "youtube", "name": "YouTube Shorts", "aiDisclosure": true, "commercialDisclosure": true },
+    { "id": "bilibili", "name": "哔哩哔哩", "aiDisclosure": true, "commercialDisclosure": true }
+  ]
+}

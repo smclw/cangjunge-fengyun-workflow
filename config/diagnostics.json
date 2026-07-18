@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "notice": "默认启发式，不是已核实的平台行业基准；有至少5条同平台同长度视频后优先使用项目历史中位数。",
+  "minimumSamples": { "rateViews": 200, "followViews": 500, "productClicks": 30, "abViewsPerVariant": 500, "matureHours": 24, "cohortSize": 5 },
+  "fallbackThresholds": { "threeSecondRetentionRate": 0.35, "completionRate": 0.2, "followerRate": 0.002, "conversionRate": 0.03, "refundRevenueRatio": 0.15 },
+  "relativeThresholds": { "lowVsMedian": 0.8, "lowTrafficVsMedian": 0.5, "minimumLift": 0.1 }
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "host": "127.0.0.1",
+  "defaultPort": 4173,
+  "maxPort": 4199,
+  "jsonLimit": "2mb",
+  "uploadLimitBytes": 10485760,
+  "backupRetention": 20,
+  "allowedOrigins": ["http://127.0.0.1", "http://localhost"],
+  "allowedExtensions": [".png", ".jpg", ".jpeg", ".webp", ".mp4", ".mov", ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".csv", ".txt", ".md"]
+}

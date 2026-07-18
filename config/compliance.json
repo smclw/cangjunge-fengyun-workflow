@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "factClasses": ["user_fact", "public_verified", "ai_inference", "unverified", "prohibited"],
+  "blockedPatterns": ["百分百", "绝对", "保证", "治愈", "根治", "永久有效", "全网最低", "销量第一", "零风险"],
+  "requiredChecks": ["claimsEvidence", "assetAuthorization", "musicCopyright", "aiDisclosure", "commercialDisclosure"],
+  "riskActions": ["标红风险内容", "说明风险原因", "提供合规改写", "提示补充证据", "证据不足禁止确定性结论"]
+}

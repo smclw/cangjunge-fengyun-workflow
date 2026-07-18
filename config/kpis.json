@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "missingPolicy": "required-null-or-zero-denominator-returns-null",
+  "aggregation": "select-latest-cumulative-snapshot-per-video-then-sum-numerators-and-denominators",
+  "formulas": [
+    { "id": "threeSecondRetentionRate", "label": "3秒留存率", "op": "divide", "numerator": ["threeSecondViews"], "denominator": "views", "format": "percent" },
+    { "id": "completionRate", "label": "完播率", "op": "divide", "numerator": ["completions"], "denominator": "views", "format": "percent" },
+    { "id": "engagementRate", "label": "互动率", "op": "sumDivide", "numerator": ["likes", "comments", "shares", "saves"], "denominator": "views", "format": "percent" },
+    { "id": "shareRate", "label": "分享率", "op": "divide", "numerator": ["shares"], "denominator": "views", "format": "percent" },
+    { "id": "saveRate", "label": "收藏率", "op": "divide", "numerator": ["saves"], "denominator": "views", "format": "percent" },
+    { "id": "followerRate", "label": "播放涨粉率", "op": "divide", "numerator": ["followersGained"], "denominator": "views", "format": "percent" },
+    { "id": "profileVisitRate", "label": "主页访问率", "op": "divide", "numerator": ["profileVisits"], "denominator": "views", "format": "percent" },
+    { "id": "clickThroughRate", "label": "点击率", "op": "divide", "numerator": ["linkClicks"], "denominator": "views", "format": "percent" },
+    { "id": "addToCartRate", "label": "加购率", "op": "divide", "numerator": ["addToCarts"], "denominator": "productClicks", "format": "percent" },
+    { "id": "conversionRate", "label": "成交率", "op": "divide", "numerator": ["orders"], "denominator": "productClicks", "format": "percent" },
+    { "id": "revenuePerThousandViews", "label": "千次播放收入", "op": "perThousand", "numerator": ["actualRevenueMinor"], "denominator": "views", "format": "moneyMinor" },
+    { "id": "costPerFollower", "label": "单粉成本", "op": "divideSum", "numerator": ["productionCostMinor", "adCostMinor"], "denominator": "followersGained", "format": "moneyMinor" },
+    { "id": "costPerOrder", "label": "单订单成本", "op": "divideSum", "numerator": ["productionCostMinor", "adCostMinor"], "denominator": "orders", "format": "moneyMinor" },
+    { "id": "netProfitMinor", "label": "净收益", "op": "subtract", "numerator": ["actualRevenueMinor"], "subtract": ["refundsMinor", "productionCostMinor", "adCostMinor"], "format": "moneyMinor" },
+    { "id": "roi", "label": "投入产出比", "op": "divide", "numerator": ["actualRevenueMinor"], "denominatorSum": ["productionCostMinor", "adCostMinor"], "format": "ratio" }
+  ]
+}

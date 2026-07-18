@@ -1,0 +1,48 @@
+{
+  "name": "topview-growth-monetization-workflow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Windows 本地运行的 Topview 涨粉变现工作流操作台",
+  "scripts": {
+    "build": "npm run typecheck && vite build --config app/client/vite.config.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.server.json && tsc --noEmit -p app/client/tsconfig.json",
+    "server": "tsx app/server/index.ts",
+    "dev:client": "vite --config app/client/vite.config.ts",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "playwright test",
+    "test:startup": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File tests/startup/start-stop.ps1",
+    "validate": "npm run typecheck && npm run test && npm run build && npm run test:e2e && npm run test:startup",
+    "seed": "tsx scripts/seed-demo.ts"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "multer": "^2.0.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2",
+    "recharts": "^3.1.2",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/adm-zip": "^0.5.7",
+    "@types/express": "^5.0.3",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^22.18.1",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@types/supertest": "^6.0.3",
+    "@vitejs/plugin-react": "^5.0.2",
+    "jsdom": "^26.1.0",
+    "supertest": "^7.1.4",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4",
+    "vitest": "^3.2.4"
+  }
+}

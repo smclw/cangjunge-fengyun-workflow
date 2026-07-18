@@ -1,0 +1,1241 @@
+{
+  "schemaVersion": 1,
+  "revision": 7,
+  "id": "demo-problem-solving-product",
+  "name": "演示-问题解决型好物视频",
+  "projectType": "问题解决型好物视频",
+  "dataClass": "demo",
+  "demoNotice": "演示数据，不代表真实经营结果",
+  "status": "active",
+  "stage": "quality",
+  "currentWizardStep": 10,
+  "createdAt": "2026-07-17T22:34:12.557Z",
+  "updatedAt": "2026-07-17T23:49:03.199Z",
+  "timezone": "Australia/Perth",
+  "locale": "zh-CN",
+  "currency": "CNY",
+  "goals": {
+    "platforms": [
+      "douyin",
+      "xiaohongshu"
+    ],
+    "region": "中国",
+    "language": "中文",
+    "currentFollowers": 3200,
+    "weeklyPosts": 4,
+    "budgetMinor": 30000,
+    "onCamera": false,
+    "hasPhysicalProduct": true,
+    "hasProductLink": true,
+    "monetizationMethods": [
+      "商品带货",
+      "视频代制作"
+    ],
+    "growthWeight": 0.6,
+    "monetizationWeight": 0.4
+  },
+  "positioning": {
+    "accountName": "生活问题解决局",
+    "statement": "用可验证的小工具，解决每天反复出现的麻烦",
+    "audience": "重视效率和真实体验的城市家庭",
+    "corePain": "日常工具看起来相似，难以判断是否真能解决问题",
+    "promise": "只展示素材能证明的操作和适用边界",
+    "style": "干净、真实、快节奏但不过度推销",
+    "avatar": "中性可信的AI讲解人物（明确AI标记）",
+    "series": [
+      "30秒解决一个日常麻烦",
+      "买前先看判断标准"
+    ],
+    "languages": [
+      "中文"
+    ],
+    "prohibitedContent": [
+      "伪造实测",
+      "绝对化效果",
+      "冒充真实用户"
+    ]
+  },
+  "sources": [
+    {
+      "id": "5cc04090-60b4-4b3d-9f7c-cd4eaf7735ff",
+      "label": "虚拟保温杯演示简报",
+      "fileName": "demo-brief.md",
+      "capturedAt": "2026-07-17T22:34:12.559Z",
+      "originalText": "虚拟产品，仅用于系统演示。卖点、价格和经营数据均非真实。",
+      "summary": "构造一个可验证工作流的非真实保温杯示例。",
+      "verification": "user_fact",
+      "authorization": "owned"
+    }
+  ],
+  "materials": [
+    {
+      "id": "18552eee-471f-4ad8-9494-c397c7571441",
+      "name": "虚拟保温杯产品示意图",
+      "type": "image",
+      "source": "项目内演示矢量图",
+      "authorization": "owned",
+      "uploadedAt": "2026-07-17T22:34:12.559Z",
+      "isOriginal": true,
+      "commercialUseAllowed": false,
+      "aiAnalysis": "演示用产品轮廓；不代表真实商品。",
+      "url": "/demo-thumbnail.svg"
+    }
+  ],
+  "products": [
+    {
+      "id": "e436683e-24e8-4e64-8d53-3062d42da99f",
+      "name": "恒温随行杯（虚拟演示产品）",
+      "brand": "DemoLab",
+      "category": "家居/随行杯",
+      "link": "",
+      "priceMinor": 12900,
+      "commissionMinor": 2580,
+      "marginPercent": 32,
+      "audience": "通勤、带娃和居家办公人群",
+      "painPoints": [
+        "忙起来忘记喝水，温度下降后口感差",
+        "普通杯盖清洁死角多"
+      ],
+      "sellingPoints": [
+        "旋拧杯盖可拆洗，操作步骤清晰",
+        "杯身窄口适配常见车载杯架",
+        "演示只说明结构与操作，不声称未验证保温时长"
+      ],
+      "competitors": [
+        "普通按压杯（仅作结构比较）"
+      ],
+      "risks": [
+        "保温时长尚未实测，不得使用“24小时保温”确定性表述"
+      ],
+      "evidenceIds": [
+        "5cc04090-60b4-4b3d-9f7c-cd4eaf7735ff"
+      ],
+      "materialIds": [
+        "18552eee-471f-4ad8-9494-c397c7571441"
+      ],
+      "parameters": {},
+      "status": "active"
+    }
+  ],
+  "topics": [
+    {
+      "id": "73e95fa6-fbd1-4a6c-b85c-63b813afcfec",
+      "name": "恒温随行杯（虚拟演示产品）解决忙起来忘记喝水，温度下降后口感差的三个细节",
+      "contentType": "问题解决",
+      "productId": "e436683e-24e8-4e64-8d53-3062d42da99f",
+      "platform": "douyin",
+      "growthScore": 87,
+      "monetizationScore": 87,
+      "riskPenalty": 0,
+      "compositeScore": 87,
+      "growthBreakdown": {
+        "pain": 18,
+        "visualContrast": 17,
+        "curiosity": 13,
+        "audienceBreadth": 13,
+        "saveShareValue": 9,
+        "freshness": 8,
+        "seriesPotential": 9
+      },
+      "monetizationBreakdown": {
+        "purchaseIntent": 18,
+        "demonstrability": 13,
+        "margin": 12,
+        "audienceFit": 14,
+        "purchaseEase": 9,
+        "trustCompliance": 9,
+        "longTermValue": 8,
+        "differentiation": 4
+      },
+      "risks": [],
+      "publishBlocked": false,
+      "angle": "先呈现麻烦，再用一个可验证动作展示解决过程",
+      "status": "recommended"
+    },
+    {
+      "id": "268b06cc-b6d3-4c98-8c06-d478233bb118",
+      "name": "别急着买恒温随行杯（虚拟演示产品）：先看这三个判断标准",
+      "contentType": "信任清单",
+      "productId": "e436683e-24e8-4e64-8d53-3062d42da99f",
+      "platform": "douyin",
+      "growthScore": 84,
+      "monetizationScore": 83,
+      "riskPenalty": 0,
+      "compositeScore": 83.6,
+      "growthBreakdown": {
+        "pain": 16,
+        "visualContrast": 12,
+        "curiosity": 14,
+        "audienceBreadth": 14,
+        "saveShareValue": 10,
+        "freshness": 8,
+        "seriesPotential": 10
+      },
+      "monetizationBreakdown": {
+        "purchaseIntent": 14,
+        "demonstrability": 10,
+        "margin": 10,
+        "audienceFit": 15,
+        "purchaseEase": 9,
+        "trustCompliance": 10,
+        "longTermValue": 10,
+        "differentiation": 5
+      },
+      "risks": [],
+      "publishBlocked": false,
+      "angle": "用适用边界和选择标准建立信任，不做绝对承诺",
+      "status": "draft"
+    },
+    {
+      "id": "5eceb94e-5f8a-420c-922d-80d8b01a7bfa",
+      "name": "恒温随行杯（虚拟演示产品）前后30秒场景对比",
+      "contentType": "场景对比",
+      "productId": "e436683e-24e8-4e64-8d53-3062d42da99f",
+      "platform": "douyin",
+      "growthScore": 88,
+      "monetizationScore": 86,
+      "riskPenalty": 1,
+      "compositeScore": 86.2,
+      "growthBreakdown": {
+        "pain": 18,
+        "visualContrast": 20,
+        "curiosity": 14,
+        "audienceBreadth": 12,
+        "saveShareValue": 8,
+        "freshness": 8,
+        "seriesPotential": 8
+      },
+      "monetizationBreakdown": {
+        "purchaseIntent": 17,
+        "demonstrability": 15,
+        "margin": 11,
+        "audienceFit": 14,
+        "purchaseEase": 9,
+        "trustCompliance": 8,
+        "longTermValue": 8,
+        "differentiation": 4
+      },
+      "risks": [
+        "homogeneity"
+      ],
+      "publishBlocked": false,
+      "angle": "只展示可由素材证明的操作变化，不伪造效果",
+      "status": "draft"
+    },
+    {
+      "id": "816abd43-f2d9-44a3-bb5a-208a35b76bcd",
+      "name": "恒温随行杯（虚拟演示产品）最容易被忽略的使用误区",
+      "contentType": "避坑教育",
+      "productId": "e436683e-24e8-4e64-8d53-3062d42da99f",
+      "platform": "douyin",
+      "growthScore": 85,
+      "monetizationScore": 81,
+      "riskPenalty": 0,
+      "compositeScore": 83.4,
+      "growthBreakdown": {
+        "pain": 17,
+        "visualContrast": 14,
+        "curiosity": 13,
+        "audienceBreadth": 13,
+        "saveShareValue": 10,
+        "freshness": 9,
+        "seriesPotential": 9
+      },
+      "monetizationBreakdown": {
+        "purchaseIntent": 13,
+        "demonstrability": 12,
+        "margin": 8,
+        "audienceFit": 15,
+        "purchaseEase": 9,
+        "trustCompliance": 10,
+        "longTermValue": 9,
+        "differentiation": 5
+      },
+      "risks": [],
+      "publishBlocked": false,
+      "angle": "用错误动作与正确动作对照，强调证据和限制",
+      "status": "draft"
+    }
+  ],
+  "scripts": [
+    {
+      "id": "1df72c99-835e-4ad7-8fa0-3372cc5da033",
+      "topicId": "73e95fa6-fbd1-4a6c-b85c-63b813afcfec",
+      "version": "growth",
+      "title": "恒温随行杯（虚拟演示产品）解决忙起来忘记喝水，温度下降后口感差的三个细节｜涨粉版",
+      "durationSeconds": 28,
+      "hooks": [
+        "如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。",
+        "你可能一直用错了恒温随行杯（虚拟演示产品）的第一个步骤。",
+        "先看这段不剪辑的操作，再决定恒温随行杯（虚拟演示产品）值不值得了解。"
+      ],
+      "narration": "如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。我用恒温随行杯（虚拟演示产品）做一个不夸张的现场演示：旋拧杯盖可拆洗，操作步骤清晰。重点不是立刻下单，而是记住这三个判断动作。收藏这份判断清单，关注下一条实测边界。",
+      "subtitles": [
+        "如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。",
+        "我用恒温随行杯（虚拟演示产品）做一个不夸张的现场演示：旋拧杯盖可拆洗，操作步骤清晰。重点不是立刻下单，而是记住这三个判断动作。",
+        "收藏这份判断清单，关注下一条实测边界。"
+      ],
+      "shots": [
+        {
+          "time": "0-3s",
+          "visual": "痛点场景：忙起来忘记喝水，温度下降后口感差",
+          "camera": "近景快速切入",
+          "subtitle": "如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。",
+          "audio": "轻提示音"
+        },
+        {
+          "time": "3-9s",
+          "visual": "展示恒温随行杯（虚拟演示产品）外观和关键部位",
+          "camera": "稳定推近",
+          "subtitle": "恒温随行杯（虚拟演示产品）",
+          "audio": "节奏进入"
+        },
+        {
+          "time": "9-21s",
+          "visual": "真实操作：旋拧杯盖可拆洗，操作步骤清晰",
+          "camera": "手部与产品同框，避免遮挡包装",
+          "subtitle": "我用恒温随行杯（虚拟演示产品）做一个不夸张的现场演示：旋拧杯盖可拆洗，操作步骤清晰。重点不是立刻下单，而是记住这三个判断动作。",
+          "audio": "保留操作声"
+        },
+        {
+          "time": "21-28s",
+          "visual": "适用边界与行动提示",
+          "camera": "定镜+文字卡",
+          "subtitle": "收藏这份判断清单，关注下一条实测边界。",
+          "audio": "收束音"
+        }
+      ],
+      "productShots": [
+        "包装正面清晰镜头",
+        "关键操作近景",
+        "使用后状态（仅限可证明）"
+      ],
+      "soundEffects": [
+        "开头轻提示",
+        "操作声保留"
+      ],
+      "bgmMood": "轻快、克制",
+      "cta": "收藏这份判断清单，关注下一条实测边界。",
+      "prohibitedContent": [
+        "伪造实测",
+        "无法证明的绝对化效果",
+        "未授权音乐或品牌素材"
+      ],
+      "requiredMaterials": [
+        "恒温随行杯（虚拟演示产品）正面图",
+        "关键操作视频",
+        "授权/证据说明"
+      ],
+      "abVariant": "B版只替换首句钩子，其他镜头、口播、CTA保持不变",
+      "createdAt": "2026-07-17T22:34:12.560Z"
+    },
+    {
+      "id": "819f08e6-a04a-4691-a091-17351eb616ec",
+      "topicId": "73e95fa6-fbd1-4a6c-b85c-63b813afcfec",
+      "version": "conversion",
+      "title": "恒温随行杯（虚拟演示产品）解决忙起来忘记喝水，温度下降后口感差的三个细节｜成交版",
+      "durationSeconds": 28,
+      "hooks": [
+        "解决“忙起来忘记喝水，温度下降后口感差”，先看产品能不能把关键动作做简单。",
+        "你可能一直用错了恒温随行杯（虚拟演示产品）的第一个步骤。",
+        "先看这段不剪辑的操作，再决定恒温随行杯（虚拟演示产品）值不值得了解。"
+      ],
+      "narration": "解决“忙起来忘记喝水，温度下降后口感差”，先看产品能不能把关键动作做简单。恒温随行杯（虚拟演示产品）的核心卖点是：旋拧杯盖可拆洗，操作步骤清晰。这里只展示现有素材可证明的部分；价格、链接和适用范围请以发布前核验为准。需要这个场景解决方案，可查看商品信息并再次核对价格。",
+      "subtitles": [
+        "解决“忙起来忘记喝水，温度下降后口感差”，先看产品能不能把关键动作做简单。",
+        "恒温随行杯（虚拟演示产品）的核心卖点是：旋拧杯盖可拆洗，操作步骤清晰。这里只展示现有素材可证明的部分；价格、链接和适用范围请以发布前核验为准。",
+        "需要这个场景解决方案，可查看商品信息并再次核对价格。"
+      ],
+      "shots": [
+        {
+          "time": "0-3s",
+          "visual": "痛点场景：忙起来忘记喝水，温度下降后口感差",
+          "camera": "近景快速切入",
+          "subtitle": "解决“忙起来忘记喝水，温度下降后口感差”，先看产品能不能把关键动作做简单。",
+          "audio": "轻提示音"
+        },
+        {
+          "time": "3-9s",
+          "visual": "展示恒温随行杯（虚拟演示产品）外观和关键部位",
+          "camera": "稳定推近",
+          "subtitle": "恒温随行杯（虚拟演示产品）",
+          "audio": "节奏进入"
+        },
+        {
+          "time": "9-21s",
+          "visual": "真实操作：旋拧杯盖可拆洗，操作步骤清晰",
+          "camera": "手部与产品同框，避免遮挡包装",
+          "subtitle": "恒温随行杯（虚拟演示产品）的核心卖点是：旋拧杯盖可拆洗，操作步骤清晰。这里只展示现有素材可证明的部分；价格、链接和适用范围请以发布前核验为准。",
+          "audio": "保留操作声"
+        },
+        {
+          "time": "21-28s",
+          "visual": "适用边界与行动提示",
+          "camera": "定镜+文字卡",
+          "subtitle": "需要这个场景解决方案，可查看商品信息并再次核对价格。",
+          "audio": "收束音"
+        }
+      ],
+      "productShots": [
+        "包装正面清晰镜头",
+        "关键操作近景",
+        "使用后状态（仅限可证明）"
+      ],
+      "soundEffects": [
+        "开头轻提示",
+        "操作声保留"
+      ],
+      "bgmMood": "利落、可信",
+      "cta": "需要这个场景解决方案，可查看商品信息并再次核对价格。",
+      "prohibitedContent": [
+        "伪造实测",
+        "无法证明的绝对化效果",
+        "未授权音乐或品牌素材"
+      ],
+      "requiredMaterials": [
+        "恒温随行杯（虚拟演示产品）正面图",
+        "关键操作视频",
+        "授权/证据说明"
+      ],
+      "abVariant": "B版只替换首句钩子，其他镜头、口播、CTA保持不变",
+      "createdAt": "2026-07-17T22:34:12.560Z"
+    },
+    {
+      "id": "0755d46b-9fb6-458f-b4b0-d5d35dee6fd1",
+      "topicId": "73e95fa6-fbd1-4a6c-b85c-63b813afcfec",
+      "version": "trust",
+      "title": "恒温随行杯（虚拟演示产品）解决忙起来忘记喝水，温度下降后口感差的三个细节｜信任版",
+      "durationSeconds": 28,
+      "hooks": [
+        "恒温随行杯（虚拟演示产品）不是人人都需要，先看你是否属于这类场景。",
+        "你可能一直用错了恒温随行杯（虚拟演示产品）的第一个步骤。",
+        "先看这段不剪辑的操作，再决定恒温随行杯（虚拟演示产品）值不值得了解。"
+      ],
+      "narration": "恒温随行杯（虚拟演示产品）不是人人都需要，先看你是否属于这类场景。适合经常遇到“忙起来忘记喝水，温度下降后口感差”的人。当前能确认的是：旋拧杯盖可拆洗，操作步骤清晰；未提供证据的效果不做承诺。把你的使用场景留言，我会按证据回答是否适合。",
+      "subtitles": [
+        "恒温随行杯（虚拟演示产品）不是人人都需要，先看你是否属于这类场景。",
+        "适合经常遇到“忙起来忘记喝水，温度下降后口感差”的人。当前能确认的是：旋拧杯盖可拆洗，操作步骤清晰；未提供证据的效果不做承诺。",
+        "把你的使用场景留言，我会按证据回答是否适合。"
+      ],
+      "shots": [
+        {
+          "time": "0-3s",
+          "visual": "痛点场景：忙起来忘记喝水，温度下降后口感差",
+          "camera": "近景快速切入",
+          "subtitle": "恒温随行杯（虚拟演示产品）不是人人都需要，先看你是否属于这类场景。",
+          "audio": "轻提示音"
+        },
+        {
+          "time": "3-9s",
+          "visual": "展示恒温随行杯（虚拟演示产品）外观和关键部位",
+          "camera": "稳定推近",
+          "subtitle": "恒温随行杯（虚拟演示产品）",
+          "audio": "节奏进入"
+        },
+        {
+          "time": "9-21s",
+          "visual": "真实操作：旋拧杯盖可拆洗，操作步骤清晰",
+          "camera": "手部与产品同框，避免遮挡包装",
+          "subtitle": "适合经常遇到“忙起来忘记喝水，温度下降后口感差”的人。当前能确认的是：旋拧杯盖可拆洗，操作步骤清晰；未提供证据的效果不做承诺。",
+          "audio": "保留操作声"
+        },
+        {
+          "time": "21-28s",
+          "visual": "适用边界与行动提示",
+          "camera": "定镜+文字卡",
+          "subtitle": "把你的使用场景留言，我会按证据回答是否适合。",
+          "audio": "收束音"
+        }
+      ],
+      "productShots": [
+        "包装正面清晰镜头",
+        "关键操作近景",
+        "使用后状态（仅限可证明）"
+      ],
+      "soundEffects": [
+        "开头轻提示",
+        "操作声保留"
+      ],
+      "bgmMood": "轻快、克制",
+      "cta": "把你的使用场景留言，我会按证据回答是否适合。",
+      "prohibitedContent": [
+        "伪造实测",
+        "无法证明的绝对化效果",
+        "未授权音乐或品牌素材"
+      ],
+      "requiredMaterials": [
+        "恒温随行杯（虚拟演示产品）正面图",
+        "关键操作视频",
+        "授权/证据说明"
+      ],
+      "abVariant": "B版只替换首句钩子，其他镜头、口播、CTA保持不变",
+      "createdAt": "2026-07-17T22:34:12.560Z"
+    }
+  ],
+  "topviewPackages": [
+    {
+      "id": "75b9ef5e-1886-4497-97f7-a8b6d93fba87",
+      "scriptId": "1df72c99-835e-4ad7-8fa0-3372cc5da033",
+      "chinesePrompt": "9:16竖屏电商短视频，28秒，产品为恒温随行杯（虚拟演示产品）。0-3s:痛点场景：忙起来忘记喝水，温度下降后口感差；近景快速切入；3-9s:展示恒温随行杯（虚拟演示产品）外观和关键部位；稳定推近；9-21s:真实操作：旋拧杯盖可拆洗，操作步骤清晰；手部与产品同框，避免遮挡包装；21-28s:适用边界与行动提示；定镜+文字卡。字幕使用简洁中文HTML文字感，包装和Logo不得变形。口播：如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。我用恒温随行杯（虚拟演示产品）做一个不夸张的现场演示：旋拧杯盖可拆洗，操作步骤清晰。重点不是立刻下单，而是记住这三个判断动作。收藏这份判断清单，关注下一条实测边界。",
+      "englishPrompt": "Create a 28-second 9:16 product video for 恒温随行杯（虚拟演示产品）. Follow the supplied shot list, keep packaging and logo accurate, use clean pacing, and do not invent product effects. Narration meaning: 如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。我用恒温随行杯（虚拟演示产品）做一个不夸张的现场演示：旋拧杯盖可拆洗，操作步骤清晰。重点不是立刻下单，而是记住这三个判断动作。收藏这份判断清单，关注下一条实测边界。",
+      "concisePrompt": "9:16，28秒，问题→产品→真实操作→边界→CTA；保持包装文字和产品外观；禁止虚假效果。",
+      "narration": "如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。我用恒温随行杯（虚拟演示产品）做一个不夸张的现场演示：旋拧杯盖可拆洗，操作步骤清晰。重点不是立刻下单，而是记住这三个判断动作。收藏这份判断清单，关注下一条实测边界。",
+      "scenes": [
+        "0-3s｜痛点场景：忙起来忘记喝水，温度下降后口感差｜近景快速切入",
+        "3-9s｜展示恒温随行杯（虚拟演示产品）外观和关键部位｜稳定推近",
+        "9-21s｜真实操作：旋拧杯盖可拆洗，操作步骤清晰｜手部与产品同框，避免遮挡包装",
+        "21-28s｜适用边界与行动提示｜定镜+文字卡"
+      ],
+      "uploadOrder": [
+        "产品正面图",
+        "关键操作视频",
+        "Logo/包装参考",
+        "场景参考（可选）"
+      ],
+      "avatarSuggestion": "中性可信的AI讲解人物；不得冒充真实用户",
+      "voiceSuggestion": "自然中文，语速约1.05x，避免促销吼叫",
+      "subtitleSuggestion": "白字+深蓝半透明底，每行不超过16字，重点词用青色",
+      "bgmSuggestion": "轻快、克制",
+      "aspectRatio": "9:16",
+      "durationSeconds": 28,
+      "negativePrompt": "错误包装文字、变形Logo、多余手指、漂浮产品、虚假前后对比、绝对化疗效、未授权品牌或音乐、画面乱码",
+      "variants": [
+        "如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。",
+        "你可能一直用错了恒温随行杯（虚拟演示产品）的第一个步骤。"
+      ],
+      "exportChecklist": [
+        "登录Topview",
+        "新建项目",
+        "按顺序上传素材",
+        "粘贴提示词",
+        "导入口播脚本",
+        "检查场景",
+        "删除无关素材",
+        "替换错误产品图",
+        "核对Logo和包装",
+        "选择人物和声音",
+        "设置9:16",
+        "先生成预览",
+        "检查前两秒",
+        "检查虚假画面",
+        "经确认后生成正式版",
+        "下载到项目目录"
+      ],
+      "completedChecklist": [],
+      "enteredTopview": false,
+      "createdAt": "2026-07-17T22:34:12.560Z"
+    },
+    {
+      "id": "0b3f9bbb-e34e-4668-861a-749a9d161317",
+      "scriptId": "819f08e6-a04a-4691-a091-17351eb616ec",
+      "chinesePrompt": "9:16竖屏电商短视频，28秒，产品为恒温随行杯（虚拟演示产品）。0-3s:痛点场景：忙起来忘记喝水，温度下降后口感差；近景快速切入；3-9s:展示恒温随行杯（虚拟演示产品）外观和关键部位；稳定推近；9-21s:真实操作：旋拧杯盖可拆洗，操作步骤清晰；手部与产品同框，避免遮挡包装；21-28s:适用边界与行动提示；定镜+文字卡。字幕使用简洁中文HTML文字感，包装和Logo不得变形。口播：解决“忙起来忘记喝水，温度下降后口感差”，先看产品能不能把关键动作做简单。恒温随行杯（虚拟演示产品）的核心卖点是：旋拧杯盖可拆洗，操作步骤清晰。这里只展示现有素材可证明的部分；价格、链接和适用范围请以发布前核验为准。需要这个场景解决方案，可查看商品信息并再次核对价格。",
+      "englishPrompt": "Create a 28-second 9:16 product video for 恒温随行杯（虚拟演示产品）. Follow the supplied shot list, keep packaging and logo accurate, use clean pacing, and do not invent product effects. Narration meaning: 解决“忙起来忘记喝水，温度下降后口感差”，先看产品能不能把关键动作做简单。恒温随行杯（虚拟演示产品）的核心卖点是：旋拧杯盖可拆洗，操作步骤清晰。这里只展示现有素材可证明的部分；价格、链接和适用范围请以发布前核验为准。需要这个场景解决方案，可查看商品信息并再次核对价格。",
+      "concisePrompt": "9:16，28秒，问题→产品→真实操作→边界→CTA；保持包装文字和产品外观；禁止虚假效果。",
+      "narration": "解决“忙起来忘记喝水，温度下降后口感差”，先看产品能不能把关键动作做简单。恒温随行杯（虚拟演示产品）的核心卖点是：旋拧杯盖可拆洗，操作步骤清晰。这里只展示现有素材可证明的部分；价格、链接和适用范围请以发布前核验为准。需要这个场景解决方案，可查看商品信息并再次核对价格。",
+      "scenes": [
+        "0-3s｜痛点场景：忙起来忘记喝水，温度下降后口感差｜近景快速切入",
+        "3-9s｜展示恒温随行杯（虚拟演示产品）外观和关键部位｜稳定推近",
+        "9-21s｜真实操作：旋拧杯盖可拆洗，操作步骤清晰｜手部与产品同框，避免遮挡包装",
+        "21-28s｜适用边界与行动提示｜定镜+文字卡"
+      ],
+      "uploadOrder": [
+        "产品正面图",
+        "关键操作视频",
+        "Logo/包装参考",
+        "场景参考（可选）"
+      ],
+      "avatarSuggestion": "中性可信的AI讲解人物；不得冒充真实用户",
+      "voiceSuggestion": "自然中文，语速约1.05x，避免促销吼叫",
+      "subtitleSuggestion": "白字+深蓝半透明底，每行不超过16字，重点词用青色",
+      "bgmSuggestion": "利落、可信",
+      "aspectRatio": "9:16",
+      "durationSeconds": 28,
+      "negativePrompt": "错误包装文字、变形Logo、多余手指、漂浮产品、虚假前后对比、绝对化疗效、未授权品牌或音乐、画面乱码",
+      "variants": [
+        "解决“忙起来忘记喝水，温度下降后口感差”，先看产品能不能把关键动作做简单。",
+        "你可能一直用错了恒温随行杯（虚拟演示产品）的第一个步骤。"
+      ],
+      "exportChecklist": [
+        "登录Topview",
+        "新建项目",
+        "按顺序上传素材",
+        "粘贴提示词",
+        "导入口播脚本",
+        "检查场景",
+        "删除无关素材",
+        "替换错误产品图",
+        "核对Logo和包装",
+        "选择人物和声音",
+        "设置9:16",
+        "先生成预览",
+        "检查前两秒",
+        "检查虚假画面",
+        "经确认后生成正式版",
+        "下载到项目目录"
+      ],
+      "completedChecklist": [],
+      "enteredTopview": false,
+      "createdAt": "2026-07-17T22:34:12.560Z"
+    },
+    {
+      "id": "93bb5bef-f5b6-42cd-a951-4af3cb9bf96c",
+      "scriptId": "0755d46b-9fb6-458f-b4b0-d5d35dee6fd1",
+      "chinesePrompt": "9:16竖屏电商短视频，28秒，产品为恒温随行杯（虚拟演示产品）。0-3s:痛点场景：忙起来忘记喝水，温度下降后口感差；近景快速切入；3-9s:展示恒温随行杯（虚拟演示产品）外观和关键部位；稳定推近；9-21s:真实操作：旋拧杯盖可拆洗，操作步骤清晰；手部与产品同框，避免遮挡包装；21-28s:适用边界与行动提示；定镜+文字卡。字幕使用简洁中文HTML文字感，包装和Logo不得变形。口播：恒温随行杯（虚拟演示产品）不是人人都需要，先看你是否属于这类场景。适合经常遇到“忙起来忘记喝水，温度下降后口感差”的人。当前能确认的是：旋拧杯盖可拆洗，操作步骤清晰；未提供证据的效果不做承诺。把你的使用场景留言，我会按证据回答是否适合。",
+      "englishPrompt": "Create a 28-second 9:16 product video for 恒温随行杯（虚拟演示产品）. Follow the supplied shot list, keep packaging and logo accurate, use clean pacing, and do not invent product effects. Narration meaning: 恒温随行杯（虚拟演示产品）不是人人都需要，先看你是否属于这类场景。适合经常遇到“忙起来忘记喝水，温度下降后口感差”的人。当前能确认的是：旋拧杯盖可拆洗，操作步骤清晰；未提供证据的效果不做承诺。把你的使用场景留言，我会按证据回答是否适合。",
+      "concisePrompt": "9:16，28秒，问题→产品→真实操作→边界→CTA；保持包装文字和产品外观；禁止虚假效果。",
+      "narration": "恒温随行杯（虚拟演示产品）不是人人都需要，先看你是否属于这类场景。适合经常遇到“忙起来忘记喝水，温度下降后口感差”的人。当前能确认的是：旋拧杯盖可拆洗，操作步骤清晰；未提供证据的效果不做承诺。把你的使用场景留言，我会按证据回答是否适合。",
+      "scenes": [
+        "0-3s｜痛点场景：忙起来忘记喝水，温度下降后口感差｜近景快速切入",
+        "3-9s｜展示恒温随行杯（虚拟演示产品）外观和关键部位｜稳定推近",
+        "9-21s｜真实操作：旋拧杯盖可拆洗，操作步骤清晰｜手部与产品同框，避免遮挡包装",
+        "21-28s｜适用边界与行动提示｜定镜+文字卡"
+      ],
+      "uploadOrder": [
+        "产品正面图",
+        "关键操作视频",
+        "Logo/包装参考",
+        "场景参考（可选）"
+      ],
+      "avatarSuggestion": "中性可信的AI讲解人物；不得冒充真实用户",
+      "voiceSuggestion": "自然中文，语速约1.05x，避免促销吼叫",
+      "subtitleSuggestion": "白字+深蓝半透明底，每行不超过16字，重点词用青色",
+      "bgmSuggestion": "轻快、克制",
+      "aspectRatio": "9:16",
+      "durationSeconds": 28,
+      "negativePrompt": "错误包装文字、变形Logo、多余手指、漂浮产品、虚假前后对比、绝对化疗效、未授权品牌或音乐、画面乱码",
+      "variants": [
+        "恒温随行杯（虚拟演示产品）不是人人都需要，先看你是否属于这类场景。",
+        "你可能一直用错了恒温随行杯（虚拟演示产品）的第一个步骤。"
+      ],
+      "exportChecklist": [
+        "登录Topview",
+        "新建项目",
+        "按顺序上传素材",
+        "粘贴提示词",
+        "导入口播脚本",
+        "检查场景",
+        "删除无关素材",
+        "替换错误产品图",
+        "核对Logo和包装",
+        "选择人物和声音",
+        "设置9:16",
+        "先生成预览",
+        "检查前两秒",
+        "检查虚假画面",
+        "经确认后生成正式版",
+        "下载到项目目录"
+      ],
+      "completedChecklist": [],
+      "enteredTopview": false,
+      "createdAt": "2026-07-17T22:34:12.560Z"
+    }
+  ],
+  "publications": [
+    {
+      "id": "pub-demo-001",
+      "videoId": "video-demo-001",
+      "platform": "douyin",
+      "plannedAt": "2026-07-10T22:34:12.560Z",
+      "actualAt": "2026-07-10T22:34:12.560Z",
+      "title": "保温杯别急着买：先看这三个可拆洗细节",
+      "tags": [
+        "问题解决",
+        "家居好物",
+        "演示项目"
+      ],
+      "productLink": "",
+      "status": "published",
+      "aiDisclosure": true,
+      "commercialDisclosure": true,
+      "videoLink": "",
+      "topicId": "73e95fa6-fbd1-4a6c-b85c-63b813afcfec",
+      "productId": "e436683e-24e8-4e64-8d53-3062d42da99f",
+      "experimentId": null,
+      "variant": "none"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "metric-demo-1",
+      "videoId": "video-demo-001",
+      "publicationId": "pub-demo-001",
+      "platform": "douyin",
+      "checkpoint": "custom",
+      "valueMode": "cumulative_since_publish",
+      "publishedAt": "2026-07-10T22:34:12.560Z",
+      "dataThroughAt": "2026-07-11T22:34:12.560Z",
+      "capturedAt": "2026-07-11T22:34:12.560Z",
+      "sourceMode": "manual",
+      "completeness": "complete",
+      "currency": "CNY",
+      "values": {
+        "impressions": 82000,
+        "views": 12600,
+        "threeSecondViews": 7800,
+        "averageWatchSeconds": 13.8,
+        "totalWatchSeconds": 173880,
+        "completions": 4100,
+        "likes": 560,
+        "comments": 88,
+        "shares": 146,
+        "saves": 220,
+        "followersGained": 190,
+        "profileVisits": 820,
+        "linkClicks": 460,
+        "productClicks": 260,
+        "addToCarts": 36,
+        "orders": 5,
+        "gmvMinor": 64500,
+        "commissionMinor": 12900,
+        "refundsMinor": 6400,
+        "productionCostMinor": 22000,
+        "adCostMinor": 30000,
+        "actualRevenueMinor": 9800
+      }
+    },
+    {
+      "id": "metric-demo-2",
+      "videoId": "video-demo-001",
+      "publicationId": "pub-demo-001",
+      "platform": "douyin",
+      "checkpoint": "custom",
+      "valueMode": "cumulative_since_publish",
+      "publishedAt": "2026-07-10T22:34:12.560Z",
+      "dataThroughAt": "2026-07-12T22:34:12.560Z",
+      "capturedAt": "2026-07-12T22:34:12.560Z",
+      "sourceMode": "manual",
+      "completeness": "complete",
+      "currency": "CNY",
+      "values": {
+        "impressions": 146000,
+        "views": 23800,
+        "threeSecondViews": 15000,
+        "averageWatchSeconds": 13.8,
+        "totalWatchSeconds": 328440,
+        "completions": 8200,
+        "likes": 1120,
+        "comments": 176,
+        "shares": 280,
+        "saves": 420,
+        "followersGained": 360,
+        "profileVisits": 1460,
+        "linkClicks": 820,
+        "productClicks": 480,
+        "addToCarts": 68,
+        "orders": 9,
+        "gmvMinor": 116100,
+        "commissionMinor": 23220,
+        "refundsMinor": 6400,
+        "productionCostMinor": 22000,
+        "adCostMinor": 30000,
+        "actualRevenueMinor": 23600
+      }
+    },
+    {
+      "id": "metric-demo-3",
+      "videoId": "video-demo-001",
+      "publicationId": "pub-demo-001",
+      "platform": "douyin",
+      "checkpoint": "custom",
+      "valueMode": "cumulative_since_publish",
+      "publishedAt": "2026-07-10T22:34:12.560Z",
+      "dataThroughAt": "2026-07-13T22:34:12.560Z",
+      "capturedAt": "2026-07-13T22:34:12.560Z",
+      "sourceMode": "manual",
+      "completeness": "complete",
+      "currency": "CNY",
+      "values": {
+        "impressions": 218000,
+        "views": 36100,
+        "threeSecondViews": 23000,
+        "averageWatchSeconds": 13.8,
+        "totalWatchSeconds": 498180,
+        "completions": 13100,
+        "likes": 1800,
+        "comments": 250,
+        "shares": 410,
+        "saves": 620,
+        "followersGained": 570,
+        "profileVisits": 2310,
+        "linkClicks": 1270,
+        "productClicks": 760,
+        "addToCarts": 108,
+        "orders": 15,
+        "gmvMinor": 193500,
+        "commissionMinor": 38700,
+        "refundsMinor": 6400,
+        "productionCostMinor": 22000,
+        "adCostMinor": 30000,
+        "actualRevenueMinor": 46800
+      }
+    },
+    {
+      "id": "metric-demo-4",
+      "videoId": "video-demo-001",
+      "publicationId": "pub-demo-001",
+      "platform": "douyin",
+      "checkpoint": "custom",
+      "valueMode": "cumulative_since_publish",
+      "publishedAt": "2026-07-10T22:34:12.560Z",
+      "dataThroughAt": "2026-07-14T22:34:12.560Z",
+      "capturedAt": "2026-07-14T22:34:12.560Z",
+      "sourceMode": "manual",
+      "completeness": "complete",
+      "currency": "CNY",
+      "values": {
+        "impressions": 301000,
+        "views": 48700,
+        "threeSecondViews": 31800,
+        "averageWatchSeconds": 13.8,
+        "totalWatchSeconds": 672060,
+        "completions": 18100,
+        "likes": 2480,
+        "comments": 340,
+        "shares": 560,
+        "saves": 830,
+        "followersGained": 760,
+        "profileVisits": 3260,
+        "linkClicks": 1810,
+        "productClicks": 1080,
+        "addToCarts": 148,
+        "orders": 21,
+        "gmvMinor": 270900,
+        "commissionMinor": 54180,
+        "refundsMinor": 6400,
+        "productionCostMinor": 22000,
+        "adCostMinor": 30000,
+        "actualRevenueMinor": 71200
+      }
+    },
+    {
+      "id": "metric-demo-5",
+      "videoId": "video-demo-001",
+      "publicationId": "pub-demo-001",
+      "platform": "douyin",
+      "checkpoint": "custom",
+      "valueMode": "cumulative_since_publish",
+      "publishedAt": "2026-07-10T22:34:12.560Z",
+      "dataThroughAt": "2026-07-15T22:34:12.560Z",
+      "capturedAt": "2026-07-15T22:34:12.560Z",
+      "sourceMode": "manual",
+      "completeness": "complete",
+      "currency": "CNY",
+      "values": {
+        "impressions": 396000,
+        "views": 61200,
+        "threeSecondViews": 40500,
+        "averageWatchSeconds": 13.8,
+        "totalWatchSeconds": 844560,
+        "completions": 23400,
+        "likes": 3190,
+        "comments": 430,
+        "shares": 720,
+        "saves": 1020,
+        "followersGained": 940,
+        "profileVisits": 4280,
+        "linkClicks": 2390,
+        "productClicks": 1420,
+        "addToCarts": 201,
+        "orders": 28,
+        "gmvMinor": 361200,
+        "commissionMinor": 72240,
+        "refundsMinor": 6400,
+        "productionCostMinor": 22000,
+        "adCostMinor": 30000,
+        "actualRevenueMinor": 101500
+      }
+    },
+    {
+      "id": "metric-demo-6",
+      "videoId": "video-demo-001",
+      "publicationId": "pub-demo-001",
+      "platform": "douyin",
+      "checkpoint": "custom",
+      "valueMode": "cumulative_since_publish",
+      "publishedAt": "2026-07-10T22:34:12.560Z",
+      "dataThroughAt": "2026-07-16T22:34:12.560Z",
+      "capturedAt": "2026-07-16T22:34:12.560Z",
+      "sourceMode": "manual",
+      "completeness": "complete",
+      "currency": "CNY",
+      "values": {
+        "impressions": 482000,
+        "views": 74400,
+        "threeSecondViews": 50100,
+        "averageWatchSeconds": 13.8,
+        "totalWatchSeconds": 1026720,
+        "completions": 29200,
+        "likes": 4020,
+        "comments": 535,
+        "shares": 900,
+        "saves": 1240,
+        "followersGained": 1160,
+        "profileVisits": 5420,
+        "linkClicks": 3020,
+        "productClicks": 1820,
+        "addToCarts": 260,
+        "orders": 35,
+        "gmvMinor": 451500,
+        "commissionMinor": 90300,
+        "refundsMinor": 6400,
+        "productionCostMinor": 22000,
+        "adCostMinor": 30000,
+        "actualRevenueMinor": 134900
+      }
+    },
+    {
+      "id": "metric-demo-7",
+      "videoId": "video-demo-001",
+      "publicationId": "pub-demo-001",
+      "platform": "douyin",
+      "checkpoint": "7d",
+      "valueMode": "cumulative_since_publish",
+      "publishedAt": "2026-07-10T22:34:12.560Z",
+      "dataThroughAt": "2026-07-17T22:34:12.560Z",
+      "capturedAt": "2026-07-17T22:34:12.560Z",
+      "sourceMode": "manual",
+      "completeness": "complete",
+      "currency": "CNY",
+      "values": {
+        "impressions": 558000,
+        "views": 86400,
+        "threeSecondViews": 59200,
+        "averageWatchSeconds": 13.8,
+        "totalWatchSeconds": 1192320,
+        "completions": 35100,
+        "likes": 4860,
+        "comments": 640,
+        "shares": 1080,
+        "saves": 1460,
+        "followersGained": 1370,
+        "profileVisits": 6480,
+        "linkClicks": 3620,
+        "productClicks": 2210,
+        "addToCarts": 324,
+        "orders": 42,
+        "gmvMinor": 541800,
+        "commissionMinor": 108360,
+        "refundsMinor": 6400,
+        "productionCostMinor": 22000,
+        "adCostMinor": 30000,
+        "actualRevenueMinor": 168800
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "623b9a34-f4d1-41da-880f-30a3466de45a",
+      "period": "当前项目最新累计快照",
+      "conclusion": "当前漏斗未出现单一异常断点，可围绕最佳钩子做单变量复测。",
+      "anomalies": [],
+      "likelyCauses": [
+        "当前漏斗未出现单一异常断点，可围绕最佳钩子做单变量复测。"
+      ],
+      "effectiveElements": [
+        "产品和使用场景保持一致"
+      ],
+      "ineffectiveElements": [
+        "首句钩子"
+      ],
+      "nextTest": "只测试A/B首句，保持受众、产品、时长和CTA一致。",
+      "keepConstant": [
+        "产品",
+        "目标受众",
+        "视频时长",
+        "CTA（非本轮变量时）"
+      ],
+      "primaryVariable": "首句钩子",
+      "winningCriterion": "目标指标相对对照版本提升至少10%，且样本量达到配置门槛",
+      "confidence": "supported",
+      "createdAt": "2026-07-17T22:34:12.561Z"
+    }
+  ],
+  "experiments": [
+    {
+      "id": "6a8c08c3-e322-4240-90ff-4a26d16eff56",
+      "name": "首句钩子A/B",
+      "hypothesis": "直接呈现清洁死角比泛化问题更能提高3秒留存",
+      "primaryVariable": "首句钩子",
+      "control": "如果你也被“忙起来忘记喝水，温度下降后口感差”反复困扰，先别划走。",
+      "variant": "你可能一直用错了恒温随行杯（虚拟演示产品）的第一个步骤。",
+      "metric": "threeSecondRetentionRate",
+      "winningCriterion": "每版播放≥500且相对提升≥10%",
+      "status": "planned"
+    }
+  ],
+  "workflow": [
+    {
+      "id": "initialize",
+      "label": "项目初始化",
+      "state": "completed"
+    },
+    {
+      "id": "goals",
+      "label": "平台与目标",
+      "state": "completed"
+    },
+    {
+      "id": "positioning",
+      "label": "账号定位",
+      "state": "completed"
+    },
+    {
+      "id": "materials",
+      "label": "资料录入",
+      "state": "completed"
+    },
+    {
+      "id": "topics",
+      "label": "选题评分",
+      "state": "completed"
+    },
+    {
+      "id": "scripts",
+      "label": "脚本生成",
+      "state": "completed"
+    },
+    {
+      "id": "topview",
+      "label": "Topview制作",
+      "state": "completed"
+    },
+    {
+      "id": "quality",
+      "label": "质量检查",
+      "state": "waiting_manual"
+    },
+    {
+      "id": "publishing",
+      "label": "发布素材",
+      "state": "in_progress"
+    },
+    {
+      "id": "review",
+      "label": "数据复盘",
+      "state": "completed"
+    }
+  ],
+  "manualTasks": [
+    {
+      "id": "topview-1",
+      "label": "登录Topview",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:46:05.038Z"
+    },
+    {
+      "id": "topview-2",
+      "label": "新建项目",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-3",
+      "label": "按顺序上传素材",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-4",
+      "label": "粘贴提示词",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:46:02.531Z"
+    },
+    {
+      "id": "topview-5",
+      "label": "导入口播脚本",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-6",
+      "label": "检查场景",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-7",
+      "label": "删除无关素材",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-8",
+      "label": "替换错误产品图",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-9",
+      "label": "核对Logo和包装",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-10",
+      "label": "选择人物和声音",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-11",
+      "label": "设置9:16",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-12",
+      "label": "先生成预览",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-13",
+      "label": "检查前两秒",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-14",
+      "label": "检查虚假画面",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-15",
+      "label": "经确认后生成正式版",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "topview-16",
+      "label": "下载到项目目录",
+      "category": "topview",
+      "completed": false,
+      "updatedAt": "2026-07-17T23:49:03.191Z"
+    },
+    {
+      "id": "publish-platform",
+      "label": "上传目标平台",
+      "category": "publishing",
+      "completed": false,
+      "updatedAt": "2026-07-17T22:34:12.557Z"
+    },
+    {
+      "id": "record-data",
+      "label": "录入数据",
+      "category": "data",
+      "completed": false,
+      "updatedAt": "2026-07-17T22:34:12.557Z"
+    }
+  ],
+  "qualityChecks": [
+    {
+      "id": "13c14203-e7ea-47ec-93d4-6d9b1468425b",
+      "label": "前两秒",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "34b42513-3c84-4d32-b2f2-8644ff5c4dd8",
+      "label": "痛点",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "b874e887-108c-4136-b65d-ce43e9d9b9e3",
+      "label": "产品出现时间",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "6086917d-ad07-4f4f-b65e-5185ee94417c",
+      "label": "节奏",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "d8a21ac3-b71c-4236-801b-5dc56c5d4c2b",
+      "label": "字幕",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "89ff3627-affb-441c-a782-b6d0fc58dfd5",
+      "label": "Logo",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "38dc5727-1846-4166-bfda-ea811462a9fe",
+      "label": "包装",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "c61d0ab7-cc92-47c8-a78e-8a7c85d68358",
+      "label": "人物手部",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "3e4e11e9-ba07-4998-8a49-37048c3de9b1",
+      "label": "画面跳变",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "153aa70f-67f1-4132-86ca-7cdf41984941",
+      "label": "绝对化用语",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "9ddfe498-4b2a-4624-8854-92d9cc5e707c",
+      "label": "虚假实测",
+      "status": "risk",
+      "note": "保温时长未实测，必须删除“24小时保温”表述"
+    },
+    {
+      "id": "fc6ff987-6ad1-4c92-aea7-9842350672fb",
+      "label": "AI标记",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "090204e2-a216-499f-9226-1d70b60bb1c1",
+      "label": "商业披露",
+      "status": "pass",
+      "note": "演示检查已完成"
+    },
+    {
+      "id": "e5d3f19b-e769-4b79-b648-40832c3a4b76",
+      "label": "音乐版权",
+      "status": "pass",
+      "note": "演示检查已完成"
+    }
+  ],
+  "risks": [
+    "保温时长未实测，发布前必须使用合规改写"
+  ],
+  "unverified": [
+    "具体保温时长",
+    "真实用户评价",
+    "真实销量"
+  ],
+  "summary": "虚拟保温杯问题解决型视频演示，包含4个选题、3类脚本、Topview制作包、7天累计数据、复盘和单变量实验。"
+}

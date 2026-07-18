@@ -1,0 +1,10 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { ProjectStore } from '../app/server/storage/project-store.js';
+import { createProjectExport } from '../app/server/services/export-service.js';
+const projectRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const id=process.argv[2];
+if(!id)throw new Error('用法：node --import tsx scripts/export-cli.ts <项目ID>');
+const store=new ProjectStore(path.join(projectRoot,'data'));
+const output=await createProjectExport(await store.read(id),path.join(projectRoot,'data'));
+console.log(output);

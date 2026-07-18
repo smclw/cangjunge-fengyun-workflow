@@ -1,0 +1,3 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+export default async function setup(){const root=path.resolve('tests/fixtures/e2e-data');const parent=path.resolve('tests/fixtures');if(path.dirname(root)!==parent||path.basename(root)!=='e2e-data')throw new Error('E2E数据目录越界');await fs.rm(root,{recursive:true,force:true});await fs.mkdir(path.join(root,'projects'),{recursive:true});await fs.cp(path.resolve('data/projects/demo-problem-solving-product'),path.join(root,'projects/demo-problem-solving-product'),{recursive:true});await fs.mkdir(path.join(root,'logs'),{recursive:true});}

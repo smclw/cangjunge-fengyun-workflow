@@ -1,0 +1,19 @@
+import { useMemo, useState } from 'react';
+import { Copy, Archive, Download, Trash2, Search, ArrowUpDown, PlayCircle } from 'lucide-react';
+import { useProject } from '../hooks/ProjectContext';
+import { api } from '../services/api';
+import { PageHeader, StatusBadge, Toast } from '../components/PageParts';
+import { Empty, Panel } from '../components/Panel';
+import type { Project } from '../types';
+
+export function ProjectsPage(){
+  const {projects,setActive,project,refresh}=useProject();const [query,setQuery]=useState(''),[filter,setFilter]=useState('all'),[sortDesc,setSortDesc]=useState(true),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);
+  const visible=useMemo(()=>projects.filter((item)=>(filter==='all'||item.status===filter)&&item.name.toLowerCase().includes(query.toLowerCase())).sort((a,b)=>(sortDesc?-1:1)*a.updatedAt.localeCompare(b.updatedAt)),[projects,query,filter,sortDesc]);
+  const execute=async(operation:()=>Promise<void>)=>{setBusy(true);try{await operation();}catch(error){setMessage(error instanceof Error?error.message:'项目操作失败');}finally{setBusy(false);}};
+  const duplicate=(id:string)=>execute(async()=>{const copy=await api.post<Project>(`/api/projects/${id}/duplicate`,{});setActive(copy.id);setMessage('项目和对应素材已复制为独立数据副本。');await refresh();});
+  const archive=(id:string)=>execute(async()=>{const target=await api.get<Project>(`/api/projects/${id}`);await api.post(`/api/projects/${id}/actions/${target.status==='archived'?'restore-archive':'archive'}`,{expectedRevision:target.revision});setMessage(target.status==='archived'?'项目已恢复':'项目已归档');await refresh();});
+  const remove=(id:string,name:string)=>execute(async()=>{if(!confirm(`确认删除“${name}”？项目会移动到本地回收备份。`))return;await api.delete(`/api/projects/${id}`,{confirmName:name});setMessage('项目已移动到 data/backups，可恢复。');await refresh();});
+  return <div><PageHeader title="项目列表" description="搜索、筛选、复制、归档、导出和安全删除；每个项目拥有独立命名空间。" actions={<a className="primary-button" href="/new">+ 新建项目</a>}/><Toast message={message} type={/失败|冲突|拒绝|无效/.test(message)?'error':'success'}/><Panel className="table-panel" title="全部项目" subtitle={`${visible.length} 个项目`} action={<div className="toolbar"><label><Search/><input value={query} onChange={(event)=>setQuery(event.target.value)} placeholder="搜索项目"/></label><select value={filter} onChange={(event)=>setFilter(event.target.value)}><option value="all">全部状态</option><option value="active">进行中</option><option value="archived">已归档</option></select><button onClick={()=>setSortDesc(!sortDesc)}><ArrowUpDown/> 最近更新</button></div>}>
+    {visible.length?<div className="data-table-wrap"><table><thead><tr><th>项目</th><th>平台</th><th>阶段</th><th>视频/发布</th><th>新增粉丝</th><th>收入</th><th>最近更新</th><th>下一步</th><th>操作</th></tr></thead><tbody>{visible.map((item)=><tr key={item.id} className={item.id===project?.id?'selected':''}><td><strong>{item.name}</strong><small>{item.projectType}</small>{item.dataClass==='demo'&&<StatusBadge tone="orange">演示</StatusBadge>}</td><td>{item.platforms.join(' / ')}</td><td><StatusBadge tone={item.status==='archived'?'gray':'blue'}>{item.status==='archived'?'已归档':item.stage}</StatusBadge></td><td>{item.videos} / {item.published}</td><td>{item.followers}</td><td>¥{(item.revenueMinor/100).toFixed(2)}</td><td>{item.updatedAt.slice(0,16).replace('T',' ')}</td><td><button className="text-button" onClick={()=>{setActive(item.id);location.href='/';}}><PlayCircle/> 继续</button></td><td><div className="row-actions"><button disabled={busy} title="复制" onClick={()=>void duplicate(item.id)}><Copy/></button><button disabled={busy} title={item.status==='archived'?'恢复':'归档'} onClick={()=>void archive(item.id)}><Archive/></button><a title="导出" download href={`/api/projects/${item.id}/export`}><Download/></a><button disabled={busy} title="删除" onClick={()=>void remove(item.id,item.name)}><Trash2/></button></div></td></tr>)}</tbody></table></div>:<Empty title="没有匹配项目"/>}
+  </Panel></div>;
+}

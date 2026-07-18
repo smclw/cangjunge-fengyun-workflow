@@ -1,0 +1,16 @@
+import { useEffect, useRef, useState } from 'react';
+import { Save, ArchiveRestore, DatabaseBackup, LockKeyhole } from 'lucide-react';
+import { useProject } from '../hooks/ProjectContext';
+import { api } from '../services/api';
+import { Field, PageHeader, Toast } from '../components/PageParts';
+import { Empty, Notice, Panel } from '../components/Panel';
+
+export function SettingsPage(){
+  const {project,update,refresh}=useProject();const fileRef=useRef<HTMLInputElement>(null);const [growth,setGrowth]=useState(project?.goals.growthWeight??.6),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);
+  useEffect(()=>{if(project)setGrowth(project.goals.growthWeight);},[project?.id,project?.goals.growthWeight]);
+  if(!project)return <Empty title="请先选择项目"/>;
+  const save=async()=>{setBusy(true);try{await update({goals:{...project.goals,growthWeight:growth,monetizationWeight:Number((1-growth).toFixed(2))}});setMessage('权重已保存；后续选题评分使用新配置。');}catch(error){setMessage(error instanceof Error?error.message:'权重保存失败');}finally{setBusy(false);}};
+  const backup=async()=>{setBusy(true);try{const result=await api.post<{path:string}>('/api/system/backup',{});setMessage(`备份已生成：${result.path}`);}catch(error){setMessage(error instanceof Error?error.message:'备份失败');}finally{setBusy(false);}};
+  const restore=async()=>{const file=fileRef.current?.files?.[0];if(!file){setMessage('请选择备份ZIP');return;}if(!confirm('恢复会先自动创建当前数据备份，然后替换备份内项目。继续吗？'))return;setBusy(true);try{const data=new FormData();data.append('backup',file);const result=await api.post<{projects:number}>('/api/system/restore',data,{'x-confirm-restore':'RESTORE'});setMessage(`已恢复 ${result.projects} 个项目和对应素材/输出。`);await refresh();}catch(error){setMessage(error instanceof Error?error.message:'恢复失败');}finally{setBusy(false);}};
+  return <div><PageHeader title="设置" description="工作流权重、本地备份恢复、安全边界与运行信息。"/><Toast message={message} type={/请|失败|无效|不一致|拒绝/.test(message)?'error':'success'}/><div className="settings-grid"><Panel title="选题权重" subtitle="两项之和必须为1"><Field label={`涨粉权重 ${growth.toFixed(2)}`}><input type="range" min="0" max="1" step="0.05" value={growth} onChange={(event)=>setGrowth(Number(event.target.value))}/></Field><div className="weight-preview"><span>涨粉 <b>{Math.round(growth*100)}%</b></span><span>变现 <b>{Math.round((1-growth)*100)}%</b></span></div><button className="primary-button" disabled={busy} onClick={()=>void save()}><Save/> 保存权重</button></Panel><Panel title="项目数据备份" subtitle="配置、项目、素材、输出、脚本、指标、复盘和日志索引"><button className="primary-button full" disabled={busy} onClick={()=>void backup()}><DatabaseBackup/> {busy?'处理中…':'立即创建本地备份'}</button><Notice>大型原始视频默认不重复复制，备份 manifest 会记录排除原因；普通素材和项目输出会校验哈希并恢复。</Notice></Panel><Panel title="恢复备份" subtitle="只接受本系统结构且通过路径、清单哈希与Schema校验的ZIP"><input ref={fileRef} type="file" accept=".zip"/><button className="ghost-button full" disabled={busy} onClick={()=>void restore()}><ArchiveRestore/> 验证并恢复</button></Panel><Panel title="安全边界" subtitle="第一阶段不可绕过"><div className="rule-list"><p><LockKeyhole/> 仅监听 127.0.0.1</p><p><LockKeyhole/> 不保存密码、Token、Cookie或API Key</p><p><LockKeyhole/> 不自动登录、付费、正式生成或发布</p><p><LockKeyhole/> 原始素材不覆盖，删除进入本地回收备份</p></div></Panel></div></div>;
+}

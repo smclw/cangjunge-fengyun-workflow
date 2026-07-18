@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "steps": [
+    { "id": "initialize", "label": "项目初始化", "manualGate": false },
+    { "id": "goals", "label": "平台与目标", "manualGate": false },
+    { "id": "positioning", "label": "账号定位", "manualGate": false },
+    { "id": "materials", "label": "资料录入", "manualGate": false },
+    { "id": "topics", "label": "选题评分", "manualGate": false },
+    { "id": "scripts", "label": "脚本生成", "manualGate": false },
+    { "id": "topview", "label": "Topview制作", "manualGate": true },
+    { "id": "quality", "label": "质量检查", "manualGate": true },
+    { "id": "publishing", "label": "发布素材", "manualGate": true },
+    { "id": "review", "label": "数据复盘", "manualGate": false }
+  ],
+  "states": ["not_started", "in_progress", "waiting_manual", "completed", "risk"]
+}

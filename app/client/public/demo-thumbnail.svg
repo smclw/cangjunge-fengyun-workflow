@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="虚拟保温杯演示缩略图">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d2448"/><stop offset="1" stop-color="#071225"/></linearGradient><linearGradient id="cup" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eef7ff"/><stop offset=".55" stop-color="#9fc5e9"/><stop offset="1" stop-color="#5277a3"/></linearGradient></defs>
+  <rect width="640" height="360" rx="30" fill="url(#bg)"/><circle cx="535" cy="72" r="125" fill="#2f7bff" opacity=".13"/><circle cx="95" cy="325" r="150" fill="#31d7e8" opacity=".08"/>
+  <rect x="404" y="80" width="92" height="210" rx="28" fill="url(#cup)"/><rect x="418" y="54" width="64" height="44" rx="14" fill="#132d50"/><rect x="425" y="125" width="50" height="5" rx="2.5" fill="#36a3ff" opacity=".75"/>
+  <text x="48" y="92" fill="#31d7e8" font-size="18" font-family="Microsoft YaHei, sans-serif">演示项目 · 非真实商品</text><text x="48" y="145" fill="#f5f8ff" font-size="34" font-weight="700" font-family="Microsoft YaHei, sans-serif">杯盖清洁死角</text><text x="48" y="190" fill="#f5f8ff" font-size="34" font-weight="700" font-family="Microsoft YaHei, sans-serif">30秒判断清单</text><text x="48" y="238" fill="#9fb0cc" font-size="18" font-family="Microsoft YaHei, sans-serif">只展示可验证的结构与操作</text>
+  <rect x="48" y="270" width="190" height="42" rx="21" fill="#2f7bff" opacity=".22" stroke="#36a3ff"/><text x="76" y="297" fill="#dcecff" font-size="17" font-family="Microsoft YaHei, sans-serif">问题 → 演示 → 边界</text>
+</svg>
